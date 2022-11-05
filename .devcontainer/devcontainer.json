@@ -1,0 +1,17 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.194.0/containers/cpp
+{
+	"name": "Erlang/OTP",
+	"dockerFile": "./Dockerfile",
+	"runArgs": [ "--init", "--systemd=true", "--userns=keep-id", "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined"],
+	"containerUser": "vscode",
+
+	// Set *default* container specific settings.json values on container create.
+	"settings": {},
+
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [
+		"ms-vscode.cpptools",
+		"erlang-ls.erlang-ls"
+	]
+}
